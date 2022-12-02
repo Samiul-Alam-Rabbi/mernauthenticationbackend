@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 dotenv.config({ path: "config/config.env" });
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5001;
 const mongo = process.env.MONGO;
 
 mongoose
